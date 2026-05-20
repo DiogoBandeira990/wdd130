@@ -62,6 +62,7 @@ main img {
     border: 1px solid steelblue;
     padding: var(--image-padding);
     box-shadow: var(--main-shadow);
+    float: right;
 }
 
 /* ASIDE */
@@ -81,10 +82,44 @@ aside img {
     height: auto;
 }
 
+/* aside.caixa{
+    position: relative;
+    display: inline-block;
+}
+aside.caixa img{
+width: 100%;
+display: block;
+}
+aside h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 40px;
+} */
+
+aside h2 {
+  position: absolute;
+  top: 685px;
+  left: 137px;
+  color: white;
+}
+
 /* FOOTER */
 
 footer {
     margin-top: var(--footer-margin-top);
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 /10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
