@@ -1,10 +1,10 @@
 :root {
-    --cor-primaria: #055a05; /*verde-floresta*/
-    --cor-secundaria: #f4a261; /*bege médio*/
-    --cor-destaque1: #264653; /*azul-escuro acinzentado*/
-    --cor-destaque2: #e9c46a; /*amarelo-claro dourado*/
-    --fonte-titulo: "Times New Roman", "Georgia", serif;
-    --fonte-body: Arial, Helvetica, sans-serif;
+    --primary-color: #055a05; /* forest green */
+    --secondary-color: #f4a261; /* medium beige */
+    --accent-color1: #264653; /* dark grayish blue */
+    --accent-color2: #e9c46a; /* light golden yellow */
+    --title-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 *{
     margin: 0;
@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 header {
-    color: var(--cor-destaque2);
+    color: var(--accent-color2);
     padding: 20px;
 }
 header img {
@@ -21,16 +21,16 @@ header img {
     margin-bottom: 20px;
 }
 body {
-    font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
+    font-family: var(--body-font);
+    color: var(--accent-color1);
 }
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 h1, h2 {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
+    font-family: var(--title-font);
+    color: var(--primary-color);
     text-align: center;
 }
 .hero {
@@ -52,7 +52,7 @@ article {
     left: 50%;
     transform: translateX(-50%);
     width: 92%;
-    background-color: rgba(214, 193, 101, 0.95);
+    background-color: var(--secondary-color);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--cor-destaque1);
+    background-color: var(--accent-color1);
     color: #fff;
 }
 /* SECTIONS */
@@ -83,10 +83,10 @@ section {
 /* TÍTULOS */
 section h2 {
     text-align: center;
-    color: var(--cor-primaria);
+    color: var(--primary-color);
     font-size: 35px;
     margin-bottom: 30px;
-    font-family: var(--fonte-titulo);
+    font-family: var(--title-font);
 }
 
 /* TEXTO HISTÓRIA */
@@ -102,7 +102,7 @@ section:last-of-type {
 }
 /* FOOTER */
 footer {
-    background-color: green;
+    background-color: var(--primary-color);
     padding: 15px;
     color: white;
 }
