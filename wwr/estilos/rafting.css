@@ -63,6 +63,7 @@ article {
     width: 120px;
     height: 120px;
     object-fit: cover;
+    float: right;
 }
 h1 {
     position: absolute;
@@ -113,13 +114,17 @@ footer p {
 }
 
 /* REDES SOCIAIS */
-.redes-sociais {
+.socialmedia {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+.socialmedia a {
+    text-decoration: none;
+}
+
 /* ÍCONES */
-.redes-sociais img {
+.socialmedia img {
     width: 220px;
 }
