@@ -1,11 +1,12 @@
 :root {
-    --cor-primaria: #055a05; /*verde-floresta*/
-    --cor-secundaria: #f4a261; /*bege médio*/
-    --cor-destaque1: #264653; /*azul-escuro acinzentado*/
-    --cor-destaque2: #e9c46a; /*amarelo-claro dourado*/
-    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --cor-primaria: #055a05;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
+    --fonte-titulo: "Times New Roman", Georgia, serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
+
 /* RESET GERAL */
 * {
     margin: 0;
@@ -16,37 +17,62 @@
 /* BODY */
 body {
     background-color: #e6e6e6;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-body);
     color: #222;
 }
 
 /* HEADER */
 header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    background-color: #bdbdbd;
     padding: 20px;
-    background-color: white;
+    gap: 40px;
 }
 
 /* LOGO */
 header img {
-    width: 180px;
-    display: block;
-    margin-bottom: 20px;
+    width: 140px;
+    height: auto;
+    justify-self: center;
 }
 
 /* MENU */
+/* MENU */
 header nav {
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 header nav li {
-    list-style-type: disc;
-    margin-bottom: 5px;
+    margin: 0;
 }
 
 header nav a {
-    color: blue;
-    font-size: 18px;
-    text-decoration: underline;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 15px 30px;
+    border: 1px solid #888;
+    font-weight: bold;
+}
+
+/* remove a borda duplicada entre os botões */
+header nav li:not(:first-child) a {
+    border-left: none;
+}
+
+header nav a:hover {
+    background-color: #e0e0e0;
 }
 
 /* HERO */
@@ -71,7 +97,7 @@ header nav a {
     text-align: center;
     color: white;
     font-size: 52px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--fonte-titulo);
     background-color: rgba(60, 80, 80, 0.6);
     padding: 15px;
 }
@@ -116,44 +142,109 @@ section h2 {
     color: darkgreen;
     font-size: 46px;
     margin-bottom: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--fonte-titulo);
 }
 
-/* TEXTO HISTÓRIA */
+/* TEXTO PADRÃO */
 section p {
     font-size: 24px;
     line-height: 1.5;
     text-align: justify;
 }
 
-/* ÚLTIMA SECTION */
-section:last-of-type {
+/* ========================= */
+/* SEÇÃO HISTÓRIA */
+/* ========================= */
+
+/* SEÇÃO HISTÓRIA */
+
+.historia {
+    padding: 60px 50px;
+    background-color: #e6e6e6;
+}
+
+.historia h2 {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    color: darkgreen;
+    margin-bottom: 30px;
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.historia-grid p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.historia-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+/* ========================= */
+/* SEÇÃO AVENTURAS */
+/* ========================= */
+
+.aventuras {
+    text-align: center;
+}
+
+.aventura-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.aventura-grid figure {
+    margin: 0;
+}
+
+.aventura-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.aventura-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* FOOTER */
 footer {
     background-color: green;
-    padding: 15px;
+    padding: 20px;
     color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* TEXTO FOOTER */
 footer p {
-    margin-bottom: 20px;
+    margin: 0;
     font-size: 20px;
 }
 
 /* REDES SOCIAIS */
 .redes-sociais {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 /* ÍCONES */
 .redes-sociais img {
-    width: 220px;
+    width: 40px;
+    height: 40px;
 }
