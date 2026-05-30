@@ -39,7 +39,6 @@ header img {
 }
 
 /* MENU */
-/* MENU */
 header nav {
     display: flex;
     justify-content: center;
@@ -60,21 +59,11 @@ header nav a {
     display: block;
     text-decoration: none;
     color: #000;
-    background-color: #fff;
+    background-color:var(--cor-destaque2);
     padding: 15px 30px;
     border: 1px solid #888;
     font-weight: bold;
 }
-
-/* remove a borda duplicada entre os botões */
-header nav li:not(:first-child) a {
-    border-left: none;
-}
-
-header nav a:hover {
-    background-color: #e0e0e0;
-}
-
 /* HERO */
 .hero {
     position: relative;
@@ -139,7 +128,7 @@ section {
 /* TÍTULOS */
 section h2 {
     text-align: center;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-size: 46px;
     margin-bottom: 30px;
     font-family: var(--fonte-titulo);
@@ -151,11 +140,6 @@ section p {
     line-height: 1.5;
     text-align: justify;
 }
-
-/* ========================= */
-/* SEÇÃO HISTÓRIA */
-/* ========================= */
-
 /* SEÇÃO HISTÓRIA */
 
 .historia {
@@ -189,14 +173,7 @@ section p {
     justify-self: center;
 }
 
-/* ========================= */
-/* SEÇÃO AVENTURAS */
-/* ========================= */
-
-/* ========================= */
 /* AVENTURAS */
-/* ========================= */
-
 .aventuras {
     padding: 60px 50px;
 }
@@ -230,9 +207,8 @@ section p {
     font-weight: bold;
 }
 
-/* ========================= */
 /* FOOTER */
-/* ========================= */
+
 
 footer {
     background-color: var(--cor-primaria);
