@@ -18,7 +18,7 @@
 body {
     background-color: #e6e6e6;
     font-family: var(--fonte-body);
-    color: #222;
+    color: var(--cor-destaque1);
 }
 
 /* HEADER */
@@ -109,7 +109,7 @@ header nav a:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 92%;
-    background-color: rgba(214, 193, 101, 0.95);
+    background-color: var(--cor-destaque2);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -139,7 +139,7 @@ section {
 /* TÍTULOS */
 section h2 {
     text-align: center;
-    color: darkgreen;
+    color: var(--cor-primaria);
     font-size: 46px;
     margin-bottom: 30px;
     font-family: var(--fonte-titulo);
@@ -165,7 +165,7 @@ section p {
 
 .historia h2 {
     text-align: center;
-    color: darkgreen;
+    color: var(--cor-primaria);
     margin-bottom: 30px;
 }
 
