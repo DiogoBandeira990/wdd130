@@ -1,0 +1,482 @@
+:root {
+    --cor-primaria: #055a05;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
+    --fonte-titulo: "Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #e6e6e6;
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    background-color: #bdbdbd;
+    padding: 20px;
+    gap: 40px;
+}
+
+/* LOGO */
+header img {
+    width: 140px;
+    height: auto;
+    justify-self: center;
+}
+
+/* MENU */
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    margin: 0;
+}
+
+header nav a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: var(--cor-secundaria);
+    padding: 15px 30px;
+    border: 1px solid #888;
+    font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: var(--cor-destaque2);
+    text-decoration: none;
+}
+
+header nav a.nav-active {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border-color: #033d03;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+/* IMAGEM PRINCIPAL */
+.hero > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TÍTULO SOBRE A IMAGEM */
+.hero h1 {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 52px;
+    font-family: var(--fonte-titulo);
+    background-color: rgba(60, 80, 80, 0.6);
+    padding: 15px;
+}
+
+/* ARTICLE */
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    background-color: var(--cor-destaque2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* TEXTO ARTICLE */
+.hero article p {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 85%;
+    text-align: justify;
+}
+
+/* IMAGEM CLIENTE FELIZ */
+.hero article img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* =============================================
+   SECTIONS (padrão)
+   ============================================= */
+section {
+    padding: 60px 50px;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--cor-destaque1);
+    font-size: 46px;
+    margin-bottom: 30px;
+    font-family: var(--fonte-titulo);
+}
+
+section p {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* =============================================
+   SEÇÃO HISTÓRIA
+   ============================================= */
+.historia {
+    padding: 60px 50px;
+    background-color: #e6e6e6;
+}
+
+.historia h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 30px;
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.historia-grid p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.historia-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+/* =============================================
+   AVENTURAS
+   ============================================= */
+.aventuras {
+    padding: 60px 50px;
+}
+
+.aventuras h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aventura-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.aventura-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.aventura-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.aventura-grid figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =============================================
+   PÁGINA DE CONTATO — INFORMAÇÕES DA EMPRESA
+   ============================================= */
+.company-info {
+    text-align: center;
+    padding: 40px 50px 20px;
+}
+
+.company-info h1 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque1);
+    margin-bottom: 0.75rem;
+}
+
+.company-info address {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.9;
+    font-size: 1rem;
+    color: var(--cor-destaque1);
+}
+
+.company-info address a {
+    color: var(--cor-destaque1);
+    text-decoration: none;
+}
+
+.company-info address a:hover {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+/* =============================================
+   LAYOUT MAPA + FORMULÁRIO
+   ============================================= */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 20px 50px 50px;
+}
+
+/* Mapa */
+.map-container {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 2px solid #aaa;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Formulário */
+.form-container {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.form-container label[for],
+.label-block {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #aaa;
+    font-size: 0.95rem;
+    font-family: var(--fonte-body);
+    background-color: #fff;
+    color: var(--cor-destaque1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container textarea:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(5, 90, 5, 0.18);
+    outline: none;
+}
+
+/* Fieldset radio */
+.form-container fieldset {
+    border: none;
+    padding: 0;
+}
+
+.form-container fieldset legend {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+    margin-bottom: 0.3rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0.15rem 0;
+    color: var(--cor-destaque1);
+}
+
+.radio-label input[type="radio"] {
+    accent-color: var(--cor-primaria);
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Textarea */
+.form-container textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* Checkbox */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 0.25rem;
+    color: var(--cor-destaque1);
+}
+
+.checkbox-label input[type="checkbox"] {
+    accent-color: var(--cor-primaria);
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Botão de envio */
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--cor-destaque2);
+    color: var(--cor-destaque1);
+    border: 1px solid #aaa;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--fonte-body);
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    margin-top: 0.5rem;
+}
+
+.form-container button[type="submit"]:hover,
+.form-container button[type="submit"]:focus {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border-color: #033d03;
+    outline: none;
+}
+
+/* =============================================
+   SEÇÃO DE FUNCIONÁRIOS
+   ============================================= */
+.staff-section {
+    background-color: #d9d9d9;
+    border-top: 3px solid #aaa;
+    border-bottom: 3px solid #aaa;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.staff-section h2 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: var(--cor-destaque1);
+    margin-bottom: 1.5rem;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.staff-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.staff-grid img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    background-color: #bbb;
+    border: 2px solid #aaa;
+}
+
+.staff-grid figcaption {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+    line-height: 1.4;
+}
+
+.staff-grid figcaption span {
+    font-weight: normal;
+    color: #555;
+}
+
+/* FOOTER — NÃO MODIFICADO*/
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* REDES SOCIAIS */
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.socialmedia a {
+    display: flex;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
