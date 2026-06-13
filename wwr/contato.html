@@ -41,18 +41,17 @@
             <div class="map-container">
                 <iframe title="Localização da empresa no google maps"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d983.3447357886321!2d-35.70713378054961!3d-9.648625826939313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1781309985249!5m2!1spt-BR!2sbr"
-                    width="600" height="450" ;" allowfullscreen="" loading="lazy"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <!-- Formulário de contato -->
-            <div class="form-container">
-                <input type="text" id="nome" name="nome" placeholder="Digite aqui" aria-label="Nome completo" required>
+            <form class="form-container" action="#" method="post">
                 <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
 
-                <input type="email" id="email" name="email" placeholder="Digite aqui" aria-label="Endereço de e-mail"
-                    required>
                 <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite aqui" required>
 
                 <fieldset>
                     <legend>Propósito da Mensagem</legend>
@@ -75,10 +74,10 @@
                 </label>
 
                 <button type="submit">Entrar em Contato!</button>
-            </div>
+            </form>
         </section>
 
-        <!-- Staff Section -->
+        <!-- Seção do Staff -->
         <section class="staff-section">
             <h2>Estamos Aqui para Servi-lo</h2>
             <div class="staff-grid">
@@ -100,7 +99,7 @@
     </main>
     <footer>
         <p>&copy; 2026 Raft Nordeste - Desenvolvido por Diogo Bandeira Ramalho</p>
-        <nav class="socialmedia">
+        <nav class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook.svg" alt="Ícone do Facebook">
             </a>

@@ -466,17 +466,17 @@ footer p {
 }
 
 /* REDES SOCIAIS */
-.socialmedia {
+.redes-sociais {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.socialmedia a {
+.redes-sociais a {
     display: flex;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 35px;
     height: 35px;
 }
