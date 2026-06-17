@@ -321,7 +321,7 @@ section p {
     outline: none;
 }
 
-/* Fieldset radio */
+
 .form-container fieldset {
     border: none;
     padding: 0;
@@ -350,7 +350,7 @@ section p {
     height: 1rem;
 }
 
-/* Textarea */
+
 .form-container textarea {
     resize: vertical;
     min-height: 110px;
@@ -448,9 +448,7 @@ section p {
     color: #555;
 }
 
-/* =============================================
-   BOTÃO CTA (reutilizado em index.html e passeios.html)
-   ============================================= */
+
 .botao-cta {
     display: inline-block;
     margin-top: 20px;
@@ -471,9 +469,7 @@ section p {
     border-color: #033d03;
 }
 
-/* =============================================
-   PÁGINA INICIAL — CHAMADA PARA AÇÃO (PASSEIOS)
-   ============================================= */
+
 .cta-passeios {
     background-color: var(--cor-destaque1);
     color: #fff;
@@ -492,9 +488,7 @@ section p {
     color: #e6e6e6;
 }
 
-/* =============================================
-   PÁGINA INICIAL — NEWSLETTER
-   ============================================= */
+
 .newsletter {
     background-color: #d9d9d9;
     text-align: center;
@@ -557,9 +551,7 @@ section p {
     outline: none;
 }
 
-/* =============================================
-   PÁGINA INICIAL — DESTAQUES (CSS GRID)
-   ============================================= */
+
 .destaques {
     padding: 60px 50px;
 }
@@ -599,9 +591,7 @@ section p {
     text-align: justify;
 }
 
-/* =============================================
-   PÁGINA PASSEIOS — INTRODUÇÃO
-   ============================================= */
+
 .passeios-intro {
     text-align: center;
     padding: 50px 50px 20px;
@@ -620,9 +610,7 @@ section p {
     text-align: center;
 }
 
-/* =============================================
-   PÁGINA PASSEIOS — CARDS DETALHADOS
-   ============================================= */
+
 .passeios-detalhes {
     padding: 30px 50px 60px;
     display: grid;
@@ -638,7 +626,7 @@ section p {
     padding: 25px;
 }
 
-/* Inverte a ordem visual das colunas nos cards alternados */
+
 .passeio-invertido .passeio-texto {
     order: -1;
 }
@@ -704,9 +692,7 @@ section p {
     background-color: #d9d9d9;
 }
 
-/* =============================================
-   PÁGINA PASSEIOS — CHAMADA PARA AÇÃO (CONTATO)
-   ============================================= */
+
 .cta-contato {
     background-color: var(--cor-destaque1);
     color: #fff;
@@ -725,7 +711,7 @@ section p {
     color: #e6e6e6;
 }
 
-/* FOOTER — NÃO MODIFICADO*/
+
 footer {
     background-color: var(--cor-primaria);
     color: white;
